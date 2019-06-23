@@ -35,14 +35,19 @@ restService.post("/echo", function(req, res) {
     req.body.queryResult.parameters.echoText
       ? req.body.queryResult.parameters.echoText
       : "Seems like some problem. Speak again.";
-  return res.json({
+  let finalResponse = '';
+  
+  finalResponse  = {
     payload: temp,
     data: temp,
     fulfillmentText: "Sample response",
     speech: speech,
     displayText: speech,
     source: "webhook-echo-sample"
-  });
+    
+  }
+  console.log('final response **** ', finalResponse);
+  return finalResponse;
 });
 
 restService.post("/audio", function(req, res) {
