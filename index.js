@@ -47,7 +47,7 @@ restService.post("/echo", function(req, res) {
     
   }
   console.log('final response **** ', finalResponse);
-  return finalResponse;
+  return res.json(finalResponse);
 });
 
 restService.post("/audio", function(req, res) {
