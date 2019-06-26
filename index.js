@@ -22,7 +22,7 @@ restService.post("/echo", function(req, res) {
         items: [
           {
             simpleResponse: {
-              textToSpeech: "this is a simple response"
+              textToSpeech: "this is a simple response "
             }
           }
         ]
@@ -39,7 +39,7 @@ restService.post("/echo", function(req, res) {
   
   finalResponse  = {
     payload: temp,
-    data: temp,
+    data: '',
     fulfillmentText: "Sample response",
     speech: speech,
     displayText: speech,
