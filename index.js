@@ -38,7 +38,7 @@ restService.post("/echo", function(req, res) {
   let finalResponse = '';
   
   finalResponse  = {
-    payload: '',
+    payload:temp,
     data: temp,
     fulfillmentText: "Sample response",
     speech: speech,
